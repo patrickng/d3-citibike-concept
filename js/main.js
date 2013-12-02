@@ -25,7 +25,7 @@ d3.json("js/data/nybb.json", function(error, topology) {
     .data(topology.features)
     .enter().append("path")
     .attr("class", function(d) { 
-      return "boro-" + d.properties.BoroName.toLowerCase().replace(/\s+/g, '');
+      return "boro boro-" + d.properties.BoroName.toLowerCase().replace(/\s+/g, '');
     })
     .attr("d", path);
 });

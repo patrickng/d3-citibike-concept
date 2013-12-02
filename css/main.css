@@ -105,7 +105,17 @@ textarea {
 .boro-bronx { fill: #dcd; }
 .boro-manhattan { fill: #ccd; }
 
+.boro {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5 ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
 
+.boro:hover {
+    opacity: 0.5;
+}
 
 
 
